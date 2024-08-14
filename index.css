@@ -1,0 +1,253 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.904);
+}
+
+nav{
+    z-index: 1000;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(253, 0, 0);
+    position:fixed;
+    width: 100%;
+    height: 55px;
+    top: 0px;
+    background-color: rgb(7, 10, 7);
+    gap: 30px;
+}
+
+.linknav:hover {
+    background-color: #fff8f8e0;
+}
+.linknav{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: larger;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#Home{
+    margin-top: 55px;
+    height: 150px;
+    text-align: center;
+    background-image: url("Images/banner.jpg");
+}
+#description{
+    font-weight: 800;
+    font-size: large;
+    color: white;
+}
+#title{
+    color:rgb(0, 255, 0) ;
+    outline: red;
+    text-shadow: 
+                2px -2px 0 #ff0000,
+
+                2px 2px 0 #001aff;
+}
+#TitleMain{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    font-size:  100px;
+    color: rgb(0, 255, 34);
+    text-shadow: 
+                5px -5px 0 #0011ff,
+
+                1px 1px 0 #001aff;
+}
+.GameTitle{
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+    height: 50px;
+    width: 100%;
+    padding: 5px;
+    text-align: left;
+}
+.Images{
+    text-align: center;
+    width: 100vw;
+    height: auto;
+}
+ .Opening{
+    color: white;
+    font-size: larger;
+ }
+ h4{
+    color: rgb(255, 0, 0);
+    font-size: 40px;
+ }
+.Pointers{
+    color: white;
+    display: flex;
+    height: 300px;
+    background-color: rgb(68, 0, 255);
+}
+.Pointers .p1{
+    font-size: 30px;
+    border: 5px solid black;
+}
+.Pointers .p2{
+    font-size: 30px;
+    border: 5px solid black;
+}
+.Pointers .p3{
+    font-size: 30px;
+    border: 5px solid black;
+}
+.Video{
+    height: 500px;
+    width: 600px;
+    position: relative;
+    left: 35%;
+}
+#About-Me{
+    border: 8px dashed red;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    height: 600px;
+}
+#Contact-Me{
+    border: 8px dashed red;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    height: 700px;
+    text-align: center;
+}
+footer{
+    height: 100px;
+    color: aqua;
+    font-size: large;
+    text-align: center;
+}
+.FNav{
+    margin: 10px;
+    text-align: center;
+}
+.linknav2{
+    border: 1px dashed red;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: larger;
+    margin: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.linknav2:hover {
+    background-color: #0056b3;
+}
+
+ #highlight{
+    color: rgb(255, 0, 0);
+    text-shadow: 
+    2px -2px 0 #00ff15,
+
+    2px 2px 0 #001aff;
+ }
+ .buttonS {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.buttonS:hover {
+    background-color: #0056b3;
+}
+ .button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 768px) {
+    nav {
+        position: static;
+        flex-flow: column nowrap;
+        height: auto;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    #Home {
+        height: 160px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .linknav {
+        font-size: medium;
+        padding: 5px 10px;
+    }
+
+    .Pointers {
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .Pointers .p1,
+    .Pointers .p2,
+    .Pointers .p3 {
+        font-size: 20px;
+        border: 3px solid black;
+        padding: 8px;
+    }
+
+    .Video {
+        width: 100%;
+        height: auto;
+        left: 0;
+    }
+
+    #About-Me,
+    #Contact-Me {
+        height: auto;
+        font-size: 30px;
+    }
+
+    footer {
+        height: auto;
+        font-size: medium;
+    }
+
+    .FNav {
+        margin: 5px;
+    }
+
+    .linknav2 {
+        font-size: medium;
+        margin: 10px;
+    }
+}
